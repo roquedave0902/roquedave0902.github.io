@@ -18,6 +18,17 @@
     .project{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center} .preview{border:1px solid var(--line);background:linear-gradient(135deg,#17385c,#0c1e34);border-radius:14px;min-height:280px;display:grid;place-items:center;text-align:center;padding:25px;color:#c7e5ff} .preview img{max-width:100%;height:auto;border-radius:8px} .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px} .metric{padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--surface)} .metric strong{display:block;color:var(--accent);font-size:1.75rem}
     footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem} .note{font-size:.88rem;color:#a8c1d8}
     @media(max-width:750px){.project{grid-template-columns:1fr}.hero{padding:70px 0}.links{gap:10px;font-size:.82rem}nav{align-items:flex-start;padding:14px 0;flex-direction:column}}
+
+    /* Portfolio case study: full-width dashboard and responsive cards */
+    .dashboard-link{display:block;position:relative;margin:28px 0 12px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface);cursor:zoom-in}
+    .dashboard-link img{display:block;width:100%;height:auto}
+    .zoom-hint{position:absolute;right:14px;bottom:14px;background:#081526e8;color:#fff;border:1px solid #7892ac;padding:8px 13px;border-radius:8px;font-size:.86rem;font-weight:600}
+    .dashboard-link:hover{border-color:var(--accent)}
+    .dashboard-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    .project-tags{margin:20px 0}
+    .case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:26px 0}
+    .case-grid .card{padding:22px}
+    @media(max-width:800px){.case-grid{grid-template-columns:1fr}.zoom-hint{position:static;display:block;border:0;border-radius:0;text-align:center}}
   </style>
 </head>
 <body>
@@ -25,15 +36,26 @@
 <main>
   <div class="hero" id="home"><div class="wrap"><div class="eyebrow">Data Analytics • Business Intelligence • Governance</div><h1>Turning complex data into clear, actionable insights.</h1><p class="lead">Senior Data Analyst &amp; Data Governance Specialist with 12+ years of experience delivering executive dashboards, enterprise KPI frameworks, performance reporting, and data quality improvements.</p><div class="buttons"><a class="btn" href="#projects">Explore Projects →</a><a class="btn secondary" href="#contact">Get in Touch</a></div></div></div>
   <section id="about"><div class="wrap"><div class="eyebrow">About Me</div><h2>Analytics that support better decisions</h2><p>I specialize in translating complex operational data into meaningful performance insights. My experience spans government programs, education analytics, PMO reporting, KPI governance, and executive business intelligence. I combine technical delivery with stakeholder engagement to make reporting more accurate, efficient, and decision-ready.</p></div></section>
-  <section id="projects"><div class="wrap"><div class="eyebrow">Selected Work</div><h2>Featured Power BI Projects</h2><div class="project">
-<div class="preview">
-  <img
-    src="Employment &amp; Workforce Performance Dashboard_by Dave.png"
-    alt="Employment & Workforce Performance Dashboard by Dave"
-    loading="lazy"
-  >
-</div>
-<div><h3>Executive Employment KPI Dashboard</h3><p>An interactive performance dashboard designed to track jobseekers, vacancies, nominations, interviews, offers, placements, target achievement, and year-over-year changes.</p><div><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">KPI Design</span></div><p><strong>Focus:</strong> Executive reporting, recruitment funnel conversion, and performance monitoring.</p><p class="note">Portfolio demonstration: disclose whether the underlying data is synthetic or anonymized before publishing.</p></div></div></div></section>
+  <section id="projects">
+    <div class="wrap">
+      <div class="eyebrow">Selected Work · Project 01</div>
+      <h2>Employment &amp; Workforce Performance Dashboard</h2>
+      <p class="lead">Executive Power BI Analytics | Recruitment Funnel &amp; KPI Performance</p>
+      <a class="dashboard-link" href="Employment%20%26%20Workforce%20Performance%20Dashboard_by%20Dave.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Employment and Workforce Performance Dashboard image in a new tab">
+        <img src="Employment%20%26%20Workforce%20Performance%20Dashboard_by%20Dave.png" alt="Power BI dashboard showing employment and workforce KPIs, recruitment funnel, jobseeker demographics, monthly placement trends and top roles" loading="lazy">
+        <span class="zoom-hint">↗ Open full-size dashboard</span>
+      </a>
+      <p class="note">Screenshot of the Power BI report. Select the image to inspect the charts and KPI values at full resolution.</p>
+      <div class="project-tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">KPI Design</span><span class="tag">Executive Reporting</span></div>
+      <p>This Power BI portfolio project brings employment and recruitment metrics into one executive view, covering jobseekers, available vacancies, nominations, interviews, offers, placements, target achievement and year-over-year performance.</p>
+      <div class="case-grid">
+        <article class="card"><h3>Business Objective</h3><p>Give decision-makers a consolidated view of workforce outcomes, placement progress and recruitment funnel conversion so they can identify where attention is needed.</p></article>
+        <article class="card"><h3>Technical Implementation</h3><p>Designed KPI cards, interactive slicers, recruitment funnel visuals and comparative performance measures in Power BI. Used DAX for KPI calculations and year-over-year analysis, with Power Query for data preparation.</p></article>
+        <article class="card"><h3>Analytical Value</h3><p>Supports analysis of progression from nominations to placements, performance against targets, demographic distribution and month-to-month trends. Findings depend on the selected reporting period and filters.</p></article>
+      </div>
+      <p class="note"><strong>Data disclosure:</strong> Before sharing this portfolio publicly, add an accurate statement here confirming whether the report uses synthetic, anonymized or approved public data. Do not publish confidential records.</p>
+    </div>
+  </section>
   <section id="skills"><div class="wrap"><div class="eyebrow">Technical Toolkit</div><h2>Skills &amp; Technologies</h2><div class="grid"><div class="card"><h3>Business Intelligence</h3><p>Power BI, Tableau, dashboard design, executive reporting, data storytelling.</p></div><div class="card"><h3>Data Analysis</h3><p>SQL, advanced Excel, DAX, Power Query, data modeling, Snowflake.</p></div><div class="card"><h3>Governance &amp; Performance</h3><p>KPI frameworks, data quality, data migration, validation, stewardship, PMO reporting.</p></div></div></div></section>
   <section id="experience"><div class="wrap"><div class="eyebrow">Career Highlights</div><h2>Selected Impact</h2><div class="metrics"><div class="metric"><strong>90+</strong>Enterprise KPIs standardized</div><div class="metric"><strong>57</strong>Projects tracked in PMO reporting</div><div class="metric"><strong>~70%</strong>Reduction in manual reporting effort</div><div class="metric"><strong>95%</strong>Data completeness achieved</div></div><p class="note">These highlights summarize previous professional work; the featured dashboard is a separate portfolio demonstration.</p></div></section>
   <section id="contact"><div class="wrap"><div class="eyebrow">Contact</div><h2>Let's connect</h2><p>Interested in discussing data analytics, business intelligence, or data governance opportunities?</p><div class="buttons"><a class="btn" href="mailto:YOUR_EMAIL@example.com">Email Me</a><a class="btn secondary" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a><a class="btn secondary" href="cv.pdf" download>Download CV</a></div><p class="note">Before publishing, replace the email and LinkedIn placeholders, and upload your CV as cv.pdf or remove that button.</p></div></section>
@@ -42,4 +64,3 @@
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
