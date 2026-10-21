@@ -138,6 +138,57 @@
   }
 }
 
+/* =========================================
+   TECHNICAL & STRATEGIC EXPERTISE
+   ========================================= */
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.expertise-grid .card {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  height: 100%;
+}
+
+.expertise-grid .card h3 {
+  color: var(--text);
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+
+.expertise-grid .card p {
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-grid .card {
+    padding: 22px;
+  }
+}
   </style>
 </head>
 <body>
@@ -256,21 +307,100 @@
     </div>
   </section>
   
-  <section id="skills">
-    <div class="wrap">
-      <div class="eyebrow">Technical Expertise</div>
-      <h2>Skills &amp; Technologies</h2>
-      <p>Combining business intelligence, enterprise data governance and performance management to deliver reliable, decision-ready insights.</p>
-      <div class="grid">
-        <div class="card"><h3>Business Intelligence &amp; Visualization</h3><p>Power BI, Tableau, Executive Dashboards, KPI Scorecards, Data Visualization, Data Storytelling, Management Reporting.</p></div>
-        <div class="card"><h3>Data Analytics &amp; Modeling</h3><p>SQL, DAX, Advanced Excel, Power Query, Semantic Data Models, Data Transformation, Trend &amp; Variance Analysis.</p></div>
-        <div class="card"><h3>Data Governance &amp; Quality</h3><p>Data Quality Frameworks, Validation &amp; Standardization, Gap Analysis, Data Integrity, Legacy Data Migration, Reporting Controls.</p></div>
-        <div class="card"><h3>Performance &amp; KPI Management</h3><p>Enterprise KPI Frameworks, Performance Scorecards, Target Setting, Performance Monitoring, Executive Reporting, Operational Analytics.</p></div>
-        <div class="card"><h3>Forecasting &amp; Strategic Insights</h3><p>Demand Forecasting, Workforce Analytics, Recruitment Funnel Analysis, Labour Market Research, Root Cause Analysis, Capacity Planning, Policy Analytics.</p></div>
-        <div class="card"><h3>Enterprise Systems &amp; Transformation</h3><p>ERP &amp; CAFM Systems, Azure Databricks, Enterprise Data Migration, System Integration, Reporting Continuity, Business Process Improvement.</p></div>
-      </div>
+
+<!-- TECHNICAL & STRATEGIC EXPERTISE -->
+<section id="skills">
+  <div class="wrap">
+
+    <div class="eyebrow">
+      Technical &amp; Strategic Expertise
     </div>
-  </section>
+
+    <h2>Expertise &amp; Capabilities</h2>
+
+    <p>
+      Leading enterprise analytics, data governance, and
+      performance management initiatives that strengthen
+      decision-making, operational efficiency, and
+      measurable business outcomes.
+    </p>
+
+    <div class="expertise-grid">
+
+      <!-- 1. BUSINESS INTELLIGENCE -->
+      <div class="card">
+        <h3>Business Intelligence &amp; Executive Reporting</h3>
+        <p>
+          Power BI, Tableau, Executive Dashboards,
+          KPI Scorecards, Data Visualization,
+          Data Storytelling, Management Reporting,
+          Leadership Decision Support.
+        </p>
+      </div>
+
+      <!-- 2. ADVANCED ANALYTICS -->
+      <div class="card">
+        <h3>Advanced Analytics &amp; Data Modeling</h3>
+        <p>
+          SQL, DAX, Advanced Excel, Power Query,
+          Semantic Data Models, Data Transformation,
+          Trend &amp; Variance Analysis,
+          Analytical Problem Solving.
+        </p>
+      </div>
+
+      <!-- 3. DATA GOVERNANCE -->
+      <div class="card">
+        <h3>Enterprise Data Governance &amp; Quality</h3>
+        <p>
+          Data Quality Frameworks, Data Standards
+          &amp; Controls, Data Validation,
+          Gap Analysis, Data Integrity,
+          Legacy Data Migration,
+          Reporting Reliability.
+        </p>
+      </div>
+
+      <!-- 4. PERFORMANCE MANAGEMENT -->
+      <div class="card">
+        <h3>Strategic Performance &amp; KPI Management</h3>
+        <p>
+          Enterprise KPI Frameworks, Performance
+          Scorecards, Target Setting,
+          Performance Monitoring, Executive Reporting,
+          Stakeholder Engagement,
+          Business Requirements Translation.
+        </p>
+      </div>
+
+      <!-- 5. FORECASTING -->
+      <div class="card">
+        <h3>Forecasting &amp; Strategic Decision Support</h3>
+        <p>
+          Demand Forecasting, Workforce Analytics,
+          Recruitment Funnel Analysis,
+          Labour Market Research,
+          Root Cause Analysis,
+          Capacity Planning, Policy Analytics.
+        </p>
+      </div>
+
+      <!-- 6. TRANSFORMATION -->
+      <div class="card">
+        <h3>Data Transformation &amp; Systems Integration</h3>
+        <p>
+          ERP &amp; CAFM Systems, Azure Databricks,
+          Enterprise Data Migration,
+          System Integration, Reporting Continuity,
+          Cross-Functional Collaboration,
+          Analytics Delivery &amp; Process Improvement.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <section id="experience">
     <div class="wrap">
